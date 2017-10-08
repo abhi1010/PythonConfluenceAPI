@@ -1,6 +1,9 @@
 from __future__ import absolute_import
-import future.standard_library
-future.standard_library.install_aliases()
+try:
+    from future import standard_library
+    standard_library.install_aliases()
+except:
+    pass
 
 __author__ = 'Robert Cope'
 
