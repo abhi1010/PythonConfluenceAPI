@@ -3,8 +3,11 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from future import standard_library
-standard_library.install_aliases()
+try:
+    from future import standard_library
+    standard_library.install_aliases()
+except:
+    pass
 
 __author__ = 'Robert Cope, Pushrod Technology'
 
